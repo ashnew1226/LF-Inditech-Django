@@ -776,12 +776,8 @@
                             <div class="form-group col-sm-4">
                             	{{ form.name | add_class:'form-control text-white rounded-0 bg-transparent' }} 
                                     <small>{{form.errors.name}}</small>
+
                                     
-                                    {% comment %} <span>error messsage</span> {% endcomment %}
-                                {% comment %} {% render_field field class="form-control text-white rounded-0 bg-transparent" placeholder=field.label %} {% endcomment %}
-                                    {% comment %} {% render_field form.name class="form-control text-white rounded-0 bg-transparent" placeholder=form.name.label %} {% endcomment %}
-
-
                                 {% comment %} <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name"
                                     placeholder="Name"> {% endcomment %}
                             </div>
@@ -791,21 +787,22 @@
                             	{{ form.email | add_class:'form-control text-white rounded-0 bg-transparent' }}
 
 <!--                                    <span>{{form.email.errors}}</span>-->
-                                {% render_field form.errors.email %}
+                                    <small>{{form.errors.email}}</small>
+
 
                             </div>
                             <div class="form-group col-sm-4">
                             {% comment %} {% render_field form.subject class="form-control text-white rounded-0 bg-transparent" placeholder=form.subject.label %} {% endcomment %}
                             	{{ form.subject | add_class:'form-control text-white rounded-0 bg-transparent' }}
+                                    <small id="subjecterror"></small>
 
-                                    <span>{{form.subject.errors}}</span>
+                                    <small>{{form.errors.subject}}</small>
 
                             </div>
                             <div class="form-group col-12">
                             {% render_field form.message class="form-control text-white rounded-0 bg-transparent" placeholder=form.message.label %}         
                             	{% comment %} {{ form.message | add_class:'form-control text-white rounded-0 bg-transparent' }} {% endcomment %}
-                                    
-                                    <span>{{form.messsage.errors}}</span>
+                                    <small>{{form.errors.message}}</small>
 
 
                             </div>
