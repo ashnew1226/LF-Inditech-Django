@@ -40,16 +40,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service">Services</a>
-                    </li>
                     <li>
-                    <select name="cars" id="cars">
+                    {% comment %} <select name="cars" id="cars">
                     <option value="services">Services</option>
                     <option value="lans survey">Land Survey CADD drafting</option>
                     <option value="land">Land Development services</option>
                     <option value="architecture">Architectural services</option>
-                    <option value="gis">GIS</option>
+                    <option value="gis">GIS</option> {% endcomment %}
+                    <div class="dropdown">
+                    <a class="nav-link">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#landsurvey" class="nav-link">Land Survey CADD drafting</a>
+                        <a href="#land" class="nav-link">Land Development services</a>
+                        <a href="#archs" class="nav-link">Architectural services</a>
+                        <a href="#gis" class="nav-link">GIS</a>
+                    </div>
+                    </div>
                 </select>
                 </li>
                     <li class="nav-item">
@@ -104,9 +110,11 @@
             LF INDITECH ensures creation of accurate CAD drawings, as per ISO, AIA or customer defined CAD drafting with
             specifications of scale, dimensions, dimensions styles, font styles, layers and symbols.</p>
     </div>
-
+    <section  id="about">
+    <br><br>
+    </section>
     <!-- About Section -->
-    <section class="section" id="about">
+    <section class="section">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
@@ -277,7 +285,7 @@
 
         </div>
     </section>
-
+<section id="landsurvey"><br></section>
     <!-- Service Section -->
     <section id="service" class="section pt-0">
         <div class="container my-2">
@@ -296,264 +304,11 @@
                         highways, etc. </p>
 
                 </div>
-      
-                    {% comment %} <ul class="lists">
-                        <li>Mortgage And Residential Survey</li>
-                        <li>Boundary Survey</li>
-                        <li>ALTA/NSPS/ACSM Title Survey</li>
-                        <li>Topographic Survey </li>
-                        <li>Subdivision Plat </li>
-                        <li>Trees Survey </li>
-                        <li>As-Built Survey </li>
-                        <li>Utilities Survey </li>
-                        <li>Road And Highway Topographic Survey </li>
-                        <li>Tower And Well Location Survey</li>
-                    </ul> {% endcomment %}
-                
-
            
         </div>
     </section>
     <!-- End OF Service Section -->
 
-
-    <!-- Portfolio Section -->
-    <!-- <section id="portfolio" class="section portfolio-section">
-        <div class="container">
-            <h6 class="section-title ">Our Portfolio</h6>
-            <h6 class="section-subtitle mb-5 text-center">New stunning projects for our amazing clients</h6>
-            <div class="filters">
-                <a href="#" data-filter=".new" class="active">
-                    New
-                </a>
-                <a href="#" data-filter=".advertising">
-                    Advertising
-                </a>
-                <a href="#" data-filter=".branding">
-                    Branding
-                </a>
-                <a href="#" data-filter=".web">
-                    Web
-                </a>
-            </div>
-            <div class="portfolio-container">
-                <div class="col-md-6 col-lg-4 web new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/web-1.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">WEB</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 web new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/web-2.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">WEB</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 advertising new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/advertising-2.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">ADVERSTISING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 web">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/web-4.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">WEB</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 advertising">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/advertising-1.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">ADVERSITING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 web new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/web-3.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">WEB</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 advertising new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/advertising-3.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">ADVERSITING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 advertising new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/advertising-4.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">ADVERTISING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-6 col-lg-4 branding new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/branding-1.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">BRANDING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 branding">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/branding-2.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">BRANDING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 branding new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/branding-3.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">BRANDING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 branding">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/branding-4.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">BRANDING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 branding">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/branding-5.jpg" class="img-fluid"
-                            alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                        <div class="content-holder">
-                            <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
-                            <div class="text-holder">
-                                <h6 class="title">BRANDING</h6>
-                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End of portfolio section -->
-
-    <!-- Blog Section -->
-    <!-- <section class="section" id="blog">
-        <div class="container">
-            <h6 class="section-title mb-0 text-center">Latest Articles</h6>
-            <h6 class="section-subtitle mb-5 text-center">Architecto provident deserunt eveniet libero</h6>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">
-                            <h6 class="card-title">Pariatur Omnis Harum quae sint.</h6>
-                            <p>Fuga quae ratione inventore Perferendis porro.</p>
-                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">
-                            <h6 class="card-title"> Harum Quae Porro</h5>
-                                <p>Fuga quae ratione inventore Perferendis porro.</p>
-                                <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">
-                            <h6 class="card-title">Qui optio neque alias</h6>
-                            <p>Fuga quae ratione inventore Perferendis porro.</p>
-                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End of Blog Section -->
 
     <!-- Testmonial Section -->
     <div class="container">
@@ -634,11 +389,10 @@
             </details>
         </div>
     </section>
-
-    <section class="section" id="testmonial">
+    <section class="section" id="land">
         <div class="container">
         <details>
-            <summary class=" sumarryclass">Land Development services</summary>
+            <summary  class=" sumarryclass">Land Development services</summary>
             <div>
                 <p>LF INDITECH INDIA team of experts can work on all aspects of Land Development
                  including site grading, sewer design, storm drainage design, site utility design,
@@ -671,10 +425,10 @@
         </div>
     </section>
 
-    <section class="section" id="testmonial1">
+    <section class="section">
         <div class="container">
             <details>
-            <summary class=" sumarryclass">Architectural services</summary>
+            <summary id="archs" class="sumarryclass">Architectural services</summary>
             <p>LF INDITECH offers a full choice of <strong>Architectural CAD drafting services</strong> like
              construction drawings, as-built drawings, presentation drawings, and 2D & 3D models, etc.
                 ​</p>
@@ -720,7 +474,7 @@
 
     <div class="container">
         <details>
-            <summary class=" sumarryclass">GIS</summary>
+            <summary id="gis" class="sumarryclass">GIS</summary>
         <p>LF INDITECH being a <strong>GIS Mapping company</strong> gathers, organizes and analyses data whether it be
             spatial or
             non-spatial. The <strong>GIS Mapping services</strong> provided by us give important inputs for the purpose
