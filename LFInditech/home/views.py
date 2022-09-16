@@ -19,7 +19,7 @@ def home(request):
                                             {'name': name, 'email': email, 'subject': subject,
                                              'message': message})
             text_content = strip_tags(html_content)
-            msg = EmailMultiAlternatives(subject, text_content, 'ashnew1226@gmail.com', ['ashnew1226@gmail.com','halsikaramit@gmail.com','vaijanathgunje62@gmail.com'])
+            msg = EmailMultiAlternatives(subject, text_content, 'ashnew1226@gmail.com', ['ashnew1226@gmail.com','halsikaramit@gmail.com','nilimashinde6@gmail.com'])
             msg.attach_alternative(html_content, "text/html")
             msg.send()
         else:
